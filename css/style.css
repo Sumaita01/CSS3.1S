@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* *NAVBAR STARTS HERE */
+
+
+
+nav{
+    margin: auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #fc4a1a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 17px 0;
+    
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    padding: 10px 23px;
+    font-size: 20px ;
+    transition: 600ms;
+    position: relative;
+}
+
+nav ul li a::before{
+    content:'';
+    width: 0;
+    height:100%;
+    background-color:#fc4b1a3e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.50s;
+    
+}
+nav ul li:hover a::before{
+    width:50%;
+    
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 100%;
+    background-color: #fc4b1a3e;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.50s;
+    
+}
+nav ul li:hover a::after{
+    width: 50%;
+    
+}
+
+
+
+
+ 
